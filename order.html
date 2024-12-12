@@ -7,13 +7,14 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Open Sans', sans-serif; /* Using a modern font */
+            font-family: 'Roboto', sans-serif;
             color: #333;
+            background-color: #f3f4f6;
         }
 
         header {
             background: linear-gradient(90deg, #1a1a2e, #16213e);
-            padding: 20px 0;
+            padding: 15px 0;
         }
 
         nav ul {
@@ -40,8 +41,8 @@
         }
 
         .order-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/4.jpg') no-repeat center center/cover; /* Use a relevant background image */
-            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/4.jpg') no-repeat center center/cover;
+            height: 65vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -49,23 +50,30 @@
             color: #fff;
         }
 
-        .order-hero .hero-content h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
+        .order-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
             text-shadow: 0 0 20px #f39c12;
         }
 
-        .order-hero .hero-content p {
-            font-size: 1.5rem;
+        .order-hero p {
+            font-size: 1.4rem;
         }
 
         .order-content {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #f9f9f9; /* Light background for the form */
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: -100px auto 40px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 30px;
+            font-size: 2rem;
         }
 
         .form-container {
@@ -73,45 +81,50 @@
         }
 
         .form-group {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         label {
             display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
             color: #555;
         }
 
         input[type="text"],
         input[type="number"],
+        input[type="email"],
         textarea,
         select {
             width: 100%;
             padding: 12px 15px;
             border: 1px solid #ddd;
-            border-radius: 3px;
-            box-sizing: border-box;
+            border-radius: 5px;
             font-size: 1rem;
         }
 
         textarea {
-            height: 100px;
+            height: 120px;
         }
 
         .button {
-            background-color: #f39c12;
+            background: linear-gradient(90deg, #f39c12, #e67e22);
             color: #fff;
-            padding: 14px 25px;
+            padding: 15px 30px;
             border: none;
-            border-radius: 3px;
+            border-radius: 5px;
             cursor: pointer;
             font-size: 1rem;
-            transition: background-color 0.3s;
+            font-weight: bold;
+            display: block;
+            width: 100%;
+            transition: transform 0.3s ease, background-color 0.3s;
         }
 
         .button:hover {
-            background-color: #e67e22;
+            background-color: #d35400;
+            transform: translateY(-3px);
         }
 
         footer {
@@ -142,16 +155,16 @@
     </header>
 
     <section class="order-hero">
-        <div class="hero-content">
+        <div>
             <h1>Place Your Order</h1>
-            <p>Choose your perfect piece of furniture and complete your order seamlessly.</p>
+            <p>Choose your perfect furniture and order now!</p>
         </div>
     </section>
 
     <section class="order-content">
         <div class="form-container">
             <h2>Order Form</h2>
-            <form id="order-form" class="order-form">
+            <form id="order-form">
                 <div class="form-group">
                     <label for="product">Select Product:</label>
                     <select id="product" name="product" required>
@@ -205,11 +218,10 @@
     </footer>
 
     <script>
-        // JavaScript to handle form validation, animations, etc.
         document.getElementById('order-form').addEventListener('submit', function(event) {
             event.preventDefault();
-            alert("Your order has been placed successfully!");
-            this.reset(); // Resets the form after submission
+            alert("Thank you! Your order has been placed successfully.");
+            this.reset();
         });
     </script>
 </body>
