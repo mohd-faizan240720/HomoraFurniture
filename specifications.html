@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMORA Furniture - Elegant Sofa</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1a1a2e, #16213e);
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            text-shadow: 0 0 20px #f39c12;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero-section h1 {
+            margin: 0 0 10px;
+            font-size: 2.5em;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-gallery {
+            flex: 1;
+            text-align: center;
+        }
+
+        .product-gallery img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .thumbnails img {
+            width: 60px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+        }
+
+        .thumbnails img:hover {
+            border-color: #2d6a4f;
+        }
+
+        .product-details {
+            flex: 1;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details h2 {
+            margin: 0 0 15px;
+            color: #444;
+        }
+
+        .price {
+            font-size: 1.5em;
+            color: green;
+            margin-bottom: 10px;
+        }
+
+        .availability {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .details-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+        }
+
+        .details-list li {
+            margin: 5px 0;
+        }
+
+        .color-options {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .color-option {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+        }
+
+        .color-option:hover {
+            border-color: #2d6a4f;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #2d6a4f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #255d47;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="specifications.html">Specifications</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>Elegant Sofa</h1>
+        <p>Luxury and comfort for your living space</p>
+    </section>
+
+    <section class="content">
+        <div class="product-gallery">
+            <img src="img/10.jpg" alt="Elegant Sofa" id="main-image">
+            <div class="thumbnails">
+                <img src="img/19.jpg" alt="Thumbnail 1" onclick="changeImage('img/19.jpg')">
+                <img src="img/20.jpg" alt="Thumbnail 2" onclick="changeImage('img/20.jpg')">
+                <img src="img/21.jpg" alt="Thumbnail 3" onclick="changeImage('img/21.jpg')">
+            </div>
+        </div>
+        <div class="product-details">
+            <h2>Elegant Sofa</h2>
+            <p class="price">$999</p>
+            <p class="availability">In Stock</p>
+            <h3>Dimensions</h3>
+            <ul class="details-list">
+                <li>Length: 84 inches</li>
+                <li>Width: 36 inches</li>
+                <li>Height: 38 inches</li>
+            </ul>
+            <h3>Materials</h3>
+            <ul class="details-list">
+                <li>Frame: Solid wood</li>
+                <li>Upholstery: 100% polyester</li>
+                <li>Cushions: High-density foam</li>
+            </ul>
+            <h3>Color Options</h3>
+            <div class="color-options">
+                <span class="color-option" style="background-color: #8B4513;" onclick="changeImage('img/19.jpg')"></span>
+                <span class="color-option" style="background-color: #D2691E;" onclick="changeImage('img/20.jpg')"></span>
+                <span class="color-option" style="background-color: #A52A2A;" onclick="changeImage('img/21.jpg')"></span>
+            </div>
+            <h3>Care Instructions</h3>
+            <p>Vacuum regularly. Spot clean with a mild soap and water solution. Professional cleaning recommended for tough stains.</p>
+            <a href="order.html" class="cta-button">Order Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 HOMORA Furniture. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+    </script>

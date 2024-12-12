@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - HOMORA FURNITURE</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif; 
+            margin: 0;
+            background-color: #f8f8f8; 
+        }
+
+        header {
+            background: linear-gradient(90deg, #1a1a2e, #16213e);
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        .reviews-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/reviews-hero.jpg') no-repeat center center/cover; 
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .reviews-hero .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px #f39c12;
+        }
+
+        .reviews-hero .hero-content p {
+            font-size: 1.5rem;
+        }
+
+        .reviews-content {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .review-summary {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .review-summary h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .star-rating {
+            display: inline-block;
+        }
+
+        .star {
+            color: gold;
+            font-size: 20px;
+        }
+
+        .half {
+            width: 50%; 
+        }
+
+        .review-list {
+            margin-bottom: 30px;
+        }
+
+        .review-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .review-header h3 {
+            margin: 0;
+        }
+
+        .review-date {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .review-quote {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 10px; 
+        }
+
+        .write-review {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .write-review h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            transition: border-color 0.3s; 
+        }
+
+        input[type="text"]:focus,
+        textarea:focus {
+            border-color: #f39c12; 
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .button {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: #e67e22;
+            transform: translateY(-2px); 
+        }
+
+        footer {
+            background: #1a1a2e;
+            padding: 20px 0;
+            text-align: center;
+            color: #aaa;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="specifications.html">Specifications</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reviews-hero">
+        <div class="hero-content">
+            <h1>Customer Reviews</h1>
+            <p>See what our customers are saying about our furniture and services.</p>
+        </div>
+    </section>
+
+    <section class="reviews-content">
+        <div class="review-summary">
+            <h2>Overall Rating</h2>
+            <div class="star-rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star half">★</span>
+            </div>
+            <p>4.5 out of 5 stars</p>
+            <p>Based on 150 reviews</p>
+        </div>
+
+        <div class="review-list">
+            <div class="review-item">
+                <div class="review-header">
+                    <h3>John D.</h3>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+                <p class="review-date">Reviewed on June 15, 2023</p>
+                <p class="review-quote">"This sofa is incredibly comfortable and stylish. It's the perfect addition to my living room."</p>
+            </div>
+
+            <div class="review-item">
+                <div class="review-header">
+                    <h3>Sarah M.</h3>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                </div>
+                <p class="review-date">Reviewed on May 30, 2023</p>
+                <p class="review-text">The Coffee Table is beautiful and well-made. It arrived on time and was easy to assemble. The only reason I'm not giving it 5 stars is that it's slightly darker than I expected from the photos.</p>
+            </div>
+
+            <div class="review-item">
+                <div class="review-header">
+                    <h3>Michael R.</h3>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                            <span class="star half">★</span>
+                        </div>
+                    </div>
+                    <p class="review-date">Reviewed on June 5, 2023</p>
+                    <p class="review-text">I purchased the Dining Set, and I'm very impressed with the quality and design. The chairs are comfortable, and the table is sturdy. Delivery was prompt, and the assembly instructions were clear. Great value for the price!</p>
+                </div>
+            </div>
+
+            <div class="write-review">
+                <h2>Write a Review</h2>
+                <form id="review-form" class="review-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">Select a rating</option>
+                            <option value="5">5 stars</option>
+                            <option value="4">4 stars</option>
+                            <option value="3">3 stars</option>
+                            <option value="2">2 stars</option>
+                            <option value="1">1 star</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="review">Your Review:</label>
+                        <textarea id="review" name="review" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Submit Review</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Furniture Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

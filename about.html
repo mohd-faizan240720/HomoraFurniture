@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - HOMORA FURNITURE</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1a1a2e, #16213e);
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        .about-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/2.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            text-shadow: 0 0 20px #f39c12;
+            margin-bottom: 20px;
+        }
+
+        .about-hero p {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .about-content {
+            background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+            padding: 50px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .about-text {
+            max-width: 600px;
+            color: #ccc;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px #f39c12;
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-text ul {
+            padding-left: 20px;
+        }
+
+        .about-text ul li {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .about-images {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .image-card {
+            position: relative;
+            max-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #f39c12;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-label {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(243, 156, 18, 0.9);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            box-shadow: 0 0 10px #f39c12;
+        }
+
+        footer {
+            background: #1a1a2e;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #aaa;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-hero p {
+                font-size: 1.2rem;
+            }
+
+            .about-content {
+                padding: 30px 10px;
+            }
+
+            .about-text h2 {
+                font-size: 1.8rem;
+            }
+
+            .about-text p {
+                font-size: 0.9rem;
+            }
+
+            .image-card {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="specifications.html">Specifications</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <h1>About Our Furniture Store</h1>
+            <p>Providing exceptional, stylish, and functional furniture for over a decade.</p>
+        </section>
+
+        <section class="about-content">
+            <div class="about-text">
+                <div class="our-story">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2005, Our Furniture Store has been dedicated to providing high-quality, stylish furniture to homes across the country. We blend craftsmanship, passion for design, and comfort to create timeless pieces that elevate any space. With years of experience, we offer furniture that not only looks beautiful but also lasts for generations.</p>
+                </div>
+
+                <div class="our-mission">
+                    <h2>Our Mission</h2>
+                    <p>At Our Furniture Store, we aim to transform houses into homes. Our mission is to help customers curate spaces that reflect their personality, combining comfort, style, and durability. Our furniture is designed to be an investment in comfort, bringing joy and relaxation to any living space.</p>
+                </div>
+
+                <div class="our-values">
+                    <h2>Our Values</h2>
+                    <ul>
+                        <li>Exceptional Craftsmanship</li>
+                        <li>Customer Satisfaction</li>
+                        <li>Sustainability</li>
+                        <li>Innovative Design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-images">
+                <div class="image-card">
+                    <img src="img/5.jpg" alt="Beautifully furnished living room">
+                    <span class="image-label">Cozy Living</span>
+                </div>
+                <div class="image-card">
+                    <img src="img/6.jpg" alt="Elegant dining room set">
+                    <span class="image-label">Elegant Dining</span>
+                </div>
+                <div class="image-card">
+                    <img src="img/7.jpg" alt="Cozy bedroom furniture">
+                    <span class="image-label">Restful Bedroom</span>
+                </div>
+                <div class="image-card">
+                    <img src="img/8.jpg" alt="Stylish office desk and chair">
+                    <span class="image-label">Modern Office</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Furniture Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
